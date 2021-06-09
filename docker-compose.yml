@@ -42,13 +42,13 @@ services:
             - PUID=1000
             - PGID=1000
             - TZ=Europe/Rome
-            - SERVERURL=68.119.15.68 #optional
+            - SERVERURL=192.168.40.10 #optional
             - SERVERPORT=51820 #optional
             - PEERDNS=auto #optional
             - INTERNAL_SUBNET=10.10.16.0 #optional
             - ALLOWEDIPS=0.0.0.0/0 #optional
         volumes:
-            - /etc/wg/server/config:/config
+            - /etc/wg/client/config:/config
             - /lib/modules:/lib/modules
         ports:
             - 51820:51820/udp
